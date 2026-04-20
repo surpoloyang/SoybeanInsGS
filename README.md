@@ -1,12 +1,22 @@
 # SoybeanInsGS: A high-precision and data-efficient point cloud instance segmentation pipeline for mature soybean plants via cross-view instance tracking and instance-aware 3D Gaussian Splatting 
 
+## Methods
+
+### Overview
+
+<img width="1000" alt="image" src='media/pipeline_v3.png'>
+
+### CVIT: Cross-view Instance Tracking
+We propose a novel cross-view instance tracking (CVIT) method to track the same instance across different views, which is the key to achieving high-precision and data-efficient point cloud instance segmentation for mature soybean plants.
+
+<img width="1000" alt="image" src='media/CVIT_v3.1.png'>
 
 ## Results
 ### Rendered Images
 <img width="1000" alt="image" src='media/result.gif'>
 
 ### Cross-view Instance Tracking
-<img width="1000" alt="image" src='media/CVIT.png'>
+<img width="1000" alt="image" src='media/CVIT_result.png'>
 
 ### Point Cloud Instance Segmentation
 <img width="1000" alt="image" src='media/ins_seg.png'>
