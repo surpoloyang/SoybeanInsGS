@@ -16,21 +16,30 @@ We propose a novel cross-view instance tracking (CVIT) method to track the same 
 
 Figure 2: The proposed cross-view instance tracking (CVIT) method.
 
+### IGS: Instance-aware 3D Gaussian Splatting
+We propose a novel instance-aware 3D Gaussian Splatting (IGS) method to augment the 3D Gaussians with instance-aware features and optimize them through supervised alignment and contrastive learning between rendered feature maps and the consistent masks, followed by the application of the Hierarchical Density Based Spatial Clustering of Applications with Noise (HDBSCAN) (Campello et al., 2013) clustering algorithm to the instance-aware 3D Gaussians to achieve accurate point cloud instance segmentation.
+
+Here are the visualization results of instance segmentation at each stage:
+
+<img width="1000" alt="image" src='media/IGS-Contrastive-learning.png'>
+
+Figure 3: The proposed instance-aware 3D Gaussian Splatting (IGS) method.
+
 ## Results
 ### Rendered Images
 <img width="1000" alt="image" src='media/result.gif'>
 
-Figure 3: The rendered images of cross-view consistent instance masks of the soybean plants.
+Figure 4: The rendered images of cross-view consistent instance masks of the soybean plants.
 
 ### Cross-view Instance Tracking
 <img width="1000" alt="image" src='media/CVIT_result.png'>
 
-Figure 4: The cross-view instance tracking results of the soybean plants.
+Figure 5: The cross-view instance tracking results of the soybean plants.
 
 ### Point Cloud Instance Segmentation
 <img width="1000" alt="image" src='media/ins_seg.png'>
 
-Figure 5: The point cloud instance segmentation results of the soybean plants.
+Figure 6: The point cloud instance segmentation results of the soybean plants.
 
 ## Installation
 ```shell
